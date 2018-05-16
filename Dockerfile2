@@ -1,7 +1,0 @@
-FROM dagman62/nginx
-
-ENV CONF_FIR /etc/nginx/conf.d
-
-RUN mv ${CONF_DIR}/default.conf ${CONF_DIR}/default.conf.save
-
-ADD jenkins.conf ${CONF_DIR}/tomcat_proxy.conf
